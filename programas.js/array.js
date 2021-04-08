@@ -7,14 +7,14 @@ console.log(films[1]);
 
 //2 - En el mismo archivo nos piden que los nombres de las películas estén en MAYÚSCULAS usando .toUpperCase() para cada elemento.
 // Asegurarnos que entregamos el array con todas las películas en mayúsculas
+function mayuscula (array){
 
-films[0]=films[0].toUpperCase();
-films[1]=films[1].toUpperCase();
-films[2]=films[2].toUpperCase();
-films[3]=films[3].toUpperCase();
-films[4]=films[4].toUpperCase();
-
-console.log(films);
+    for ( let i=0; i < array.length; i ++){
+        array[i] = array[i].toUpperCase()
+    }
+    return array
+};
+console.log(mayuscula(films))
 
 let cartoons = ["toy story", "finding Nemo", "kung-fu panda", "wally", "fornite"];
 
